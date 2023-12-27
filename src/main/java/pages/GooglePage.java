@@ -39,9 +39,8 @@ public class GooglePage extends PageBase {
 	    	sendvalues(fuelInLiters, "40");
 	    	sendvalues(fuelCost, "500");
 	    	sendvalues(fuelType, "Gaz");
-	    	sendvalues(dateAndTime, "09252013");
-	    	//dateAndTime.sendKeys(Keys.ARROW_RIGHT);
-	    	//sendvalues(dateAndTime,"1145");
+	    	sendvalues(dateAndTime, "09022013");
+	     	dateAndTime.sendKeys(Keys.ARROW_RIGHT);
 	    	dateAndTime.sendKeys("11");
 	    	dateAndTime.sendKeys(Keys.ARROW_RIGHT);
 	    	dateAndTime.sendKeys("10");
