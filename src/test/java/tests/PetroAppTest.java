@@ -7,15 +7,15 @@ import org.openqa.selenium.WebElement;
 import org.testng.AssertJUnit;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pages.GooglePage;
+import pages.PetroAppPage;
 
-public class searchTest extends TestBase{
-	GooglePage test;
+public class PetroAppTest extends TestBase{
+	PetroAppPage test;
 	
 	@BeforeTest
 	//define object from google page
 	public void intializeObjets() {
-		test = new GooglePage(driver);
+		test = new PetroAppPage(driver);
 	}
 
 	@Test(priority = 1)
@@ -37,9 +37,9 @@ public class searchTest extends TestBase{
 	        System.out.println("Last Row - CarNumber: " + lastRowCarNumber +
 	                ", FuelInGalon: " + lastRowFuelInGalon +
 	                ", CompanyID: " + lastRowCompanyID);
-	        AssertJUnit.assertEquals(lastRowCarNumber, "44444444");
-	        AssertJUnit.assertEquals(lastRowFuelInGalon, "40");
-	        AssertJUnit.assertEquals(lastRowCompanyID, "1010");
+	        AssertJUnit.assertEquals("1234",lastRowCarNumber);
+	        AssertJUnit.assertEquals("40", lastRowFuelInGalon);
+	        AssertJUnit.assertEquals( "1010" , lastRowCompanyID);
 	    }
 
 
